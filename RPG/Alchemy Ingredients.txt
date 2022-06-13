@@ -1,0 +1,67 @@
+Mandrake Root 
+Salt
+Frost Salt
+Fire Salt
+Poison Salt
+Dried Finger
+Black Powder
+Polish Powder
+Shiny Powder
+Magical Clay
+Blood Clay LIFESTEAL 2,
+Nectar
+Glowing Nectar MAGICPEN 1500, 
+Black Liquid
+Bee Stinger
+Butterfly Wing
+Dragonfly Wing
+Blood root
+Crimson Root
+Spider Eggs
+Bone meal
+Rat Claw
+Spider Fang CRITDAMAGE 50, CRITCHANCE 50,
+Death Vine
+Slime Oils(if you have slimes)
+Verdant Herb
+verdant Moss
+Bat wing
+Feather
+Razortip Feather ADDALLOFF 50,
+Honeycomb
+Ectoplasm(if you have ghosts)
+Crow Beak
+Human Flesh MAXHP 500, 
+Goblin Flesh
+Mino Claw ARMORPEN 1500, 
+Mino Horn
+Crownberries
+Wild Shrooms
+Lavender
+Nightshade
+Tree Sap MAXMANA 500, 
+Flourescent Sap
+Coal Ashes
+Lush Herb
+Mountain Flower ADDALLDEF 50, 
+Ice Berries
+Sour Grapes
+Luminescent Grapes
+Elf Ear Leaves
+Troll Tears(if you have trolls)
+Dragon Tears
+Demon Tears 
+Acidic Residue
+Baneflower
+Blizzard Bloom
+Emberstone
+White Myrtle Petals
+Amathyst Dust
+Diamond Dust
+Dragon Tongue
+Essence of Life
+Essence of Death
+Swamp Tar
+Toad Legs
+Fungus
+Moonseed

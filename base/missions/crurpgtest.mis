@@ -1,0 +1,213 @@
+//--- export object begin ---//
+instant SimGroup "MissionGroup" {
+	instant SimGroup "Volumes" {
+		instant SimVolume "InterfaceVol" {
+			fileName = "Interface.vol";
+		};
+		instant SimVolume "entities" {
+			fileName = "Entities.vol";
+		};
+		instant SimVolume "World" {
+			fileName = "lushWorld.vol";
+		};
+		instant SimVolume "WorldTerrain" {
+			fileName = "lushTerrain.vol";
+		};
+		instant SimVolume "lushDML" {
+			fileName = "lushDML.vol";
+		};
+		instant SimVolume "savanaDML" {
+			fileName = "savanaDML.vol";
+		};
+		instant SimVolume "human1DML" {
+			fileName = "human1DML.vol";
+		};
+		instant SimVolume "TedFile" {
+			fileName = "missions\\crurpgtest.ted";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "testtower.vol";
+		};
+	};
+	instant SimGroup "World" {
+		instant SimPalette "Palette" {
+			fileName = "lush.day.ppl";
+		};
+		instant MissionCenterPos "MissionCenter" {
+			x = "-256";
+			y = "-256";
+			w = "512";
+			h = "512";
+		};
+	};
+	instant SimGroup "Landscape" {
+		instant Sky "Sky" {
+			dmlName = "";
+			skyColor = "0.399999 0.399999 0.399999";
+			hazeColor = "7.95672e-38 7.95684e-38 7.95696e-38";
+			featurePosition = "0";
+			size = "600";
+			textures[0] = "0";
+			textures[1] = "1";
+			textures[2] = "2";
+			textures[3] = "3";
+			textures[4] = "4";
+			textures[5] = "5";
+			textures[6] = "6";
+			textures[7] = "7";
+			textures[8] = "8";
+			textures[9] = "9";
+			textures[10] = "10";
+			textures[11] = "11";
+			textures[12] = "12";
+			textures[13] = "13";
+			textures[14] = "14";
+			textures[15] = "15";
+		};
+		instant Planet "Sun" {
+			fileName = "";
+			azimuth = "0";
+			incidence = "60";
+			castShadows = "True";
+			useLensFlare = "False";
+			intensity = "0.299994 0.299994 0.299994";
+			ambient = "0.149994 0.149994 0.149994";
+			size = "2000";
+			distance = "11000";
+		};
+		instant SimTerrain "Terrain" {
+			tedFileName = "crurpgtest.dtf";
+			visibleDistance = "600";
+			hazeDistance = "400";
+			hazeVerticalMin = "9.88136e-39";
+			hazeVerticalMax = "8.10722e-39";
+			perspectiveDistance = "100";
+			screenSize = "70";
+			contGravity = "0 0 -20";
+			contDrag = "0";
+			contHeight = "10000";
+			position = "-768 -768 0";
+			rotation = "0 0 0";
+			terrainType = "rolplains";
+		};
+		instant Snowfall "rain1" {
+			intensity = "0.0999999";
+			wind = "0 0 -75";
+			suspendRendering = "False";
+			rain = "True";
+			locked = "true";
+		};
+	};
+	instant SimGroup "Lights";
+	instant SimGroup "Teams" {
+		instant TeamGroup "team0" {
+			instant SimGroup "DropPoints" {
+				instant Marker "Marker1" {
+					dataBlock = "PathMarker";
+					name = "";
+					position = "-112.636 29.8901 3.65315";
+					rotation = "0 0 0";
+				};
+			};
+		};
+	};
+	instant SimGroup "TOWN" {
+		instant InteriorShape "bunker21" {
+			fileName = "bunker2.dis";
+			isContainer = "1";
+			position = "-111.975 63.1105 -1.69113";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			locked = "1";
+		};
+	};
+	instant SimGroup "TheArena" {
+		instant SimGroup "TeleportExitMarkers" {
+			instant Marker "Map Marker1" {
+				dataBlock = "MapMarker";
+				name = "";
+				position = "-107.34 18.4737 5.71437";
+				rotation = "0 0 0";
+			};
+		};
+	};
+	instant SimGroup "AREA1" {
+		instant InteriorShape "ebunker1" {
+			fileName = "ebunker.dis";
+			isContainer = "1";
+			position = "-132.45 13.1464 -0.876631";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			locked = "1";
+		};
+		instant StaticShape "BigElectroBeam1" {
+			dataBlock = "ElectricalBeamBig";
+			name = "";
+			position = "-132.009 13.4046 6.87335";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "testtower1" {
+			fileName = "testtower.dis";
+			isContainer = "1";
+			position = "-237.602 -34.0704 37.4627";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant StaticShape "BigElectroBeam1" {
+			dataBlock = "ElectricalBeamBig";
+			name = "";
+			position = "-225.499 -26.1634 39.4627";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+	};
+	instant SimGroup "TELEPORTS" {
+		instant Trigger "D ENTER" {
+			dataBlock = "GroupTrigger";
+			name = "";
+			position = "-131.901 13.4216 6.87333";
+			rotation = "0 0 0";
+			boundingBox = "-1 -1 -1 1 1 1";
+			isSphere = "False";
+			OutRot = "0 0 -3";
+			OutPos = "-225 -36 39.5";
+			zone = "Dungeon";
+			TrigType = "WARP";
+			locked = "1";
+		};
+		instant Trigger "D EXIT" {
+			dataBlock = "GroupTrigger";
+			name = "";
+			position = "-225.597 -26.246 40.0625";
+			rotation = "0 0 0";
+			boundingBox = "-1 -1 -1 1 1 1";
+			isSphere = "False";
+			OutRot = "0 0 0";
+			OutPos = "-118 11 4.7";
+			zone = "Unknown";
+			TrigType = "WARP";
+			locked = "1";
+		};
+	};
+	instant SimGroup "OZONE" {
+		instant Trigger "TOWN" {
+			dataBlock = "GroupTrigger";
+			name = "";
+			position = "-112.92 62.0596 6.08498";
+			rotation = "0 0 0";
+			boundingBox = "-17.5 -17.5 -17.5 17.5 17.5 17.5";
+			isSphere = "True";
+			zone = "KTOWN";
+			TrigType = "ZONE";
+		};
+	};
+};
+//--- export object end ---//
+$teamScoreLimit = 100;
+exec(objectives);
+$Game::missionType = "C&H";
+$cdTrack = 2;
+$cdPlayMode = 1;

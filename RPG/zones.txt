@@ -1,0 +1,63 @@
+FOREST - Keldrin Forest
+	TERRAIN 1 - Keldrin
+	 	OUTSIDE - Keldrin Encampment 
+		ZONE 1 - Musty Cellar 			1 Goblin Master
+		ZONE 2 - Old Mines 			2 Giant Widow
+	TERRAIN 2 - Dark Woods
+		OUTSIDE - Town Ruins 			3	
+		ZONE 1 - Black Cavern 			4 Stone Demon
+		ZONE 2 - Undertower 			5 Spiked Rat
+	TERRAIN 3 - Stone Pass
+		OUTSIDE - Old Keep 			6	
+		ZONE 1 - Underpath			7 Demonic Obilesk
+		ZONE 2 - Stone Catacombs 		8 Iron Berserker
+DESERT
+	TERRAIN 1 - Town
+		OUTSIDE - Town
+		ZONE 1 - The Oasis			9 Scarab Demon
+		ZONE 2 - Sewers x			10 Slime Muck
+	TERRAIN 2
+		OUTSIDE - Lookout Point			11
+		ZONE 1 - Dusty Cave			12 Scorpion Demon
+		ZONE 2 - Temple Ruins			13 
+	TERRAIN 3
+		ZONE 1 - Ancient Library		14
+		ZONE 2 - Sun Pyramid			15
+ISLAND
+	TERRAIN 1 - Town
+		OUTSIDE - Town
+		ZONE 1 - Under the Well			16
+		ZONE 2 - Flooded cavern			17
+	TERRAIN 2 - Underwater
+		ZONE 1 - Lost Temple			18
+		ZONE 2 - Flooded waterway		19
+	TERRAIN 3
+		ZONE 1 - Emerald Mine 			20
+		ZONE 2 - The Great Old Tree		21
+ICE
+	TERRAIN 1 - Town
+		ZONE 1 - Cold Cellar			22
+		ZONE 2 - Frozen Catacombs		23
+	TERRAIN 2 - Freezing Mountain		
+		OUTSIDE - Stronghold Ruins		24
+		ZONE 1 - Old Jail Ruins			25
+		ZONE 2 - The Ice Caverns 		26
+	TERRAIN 3 - Frozen Wastes
+		OUTSIDE - Frozen Lake			27
+		ZONE 1 - The Tower Stores		28
+		ZONE 2 - Icy Labyrinth			29
+BURNING
+	TERRAIN 1 - Town
+		OUTSIDE - Arkon's Keep			30
+		ZONE 1 - Pit of Death 			31
+		ZONE 2 - Halls of Pain 			32
+	TERRAIN 2
+		ZONE 1 - Burning Caverns		33
+		ZONE 2 - Hells Point 			34
+	TERRAIN 3 -
+		ZONE 1 - Mines of Fire			35
+		ZONE 2 - The Arcane Gates		36
+ARCANE
+	AREA 1 - The Underworld	
+	AREA 2 - Arkon's Pass
+	AREA 3 - The Burning Hells

@@ -1,0 +1,10 @@
+$CURRENTCRUMAP = "DESERT";
+$Server::HostName = "CRUCIBLE Rakhar Desert DEV";
+$Server::HostPublicGame = "true";
+$Server::Address = "192.168.0.33:28002";
+$Server::Port = "28002";
+$Server::Password = "DEV667";
+$telnetport = "668";
+$telnetpassword = "AJJIkkeOI388834u0KKK30NHEUHJHgRREXN";
+$commID = 668;
+$commServers = "667 669";

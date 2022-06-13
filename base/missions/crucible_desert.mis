@@ -1,0 +1,2697 @@
+//--- export object begin ---//
+instant SimGroup "MissionGroup" {
+	instant SimGroup "Volumes" {
+		instant SimVolume "InterfaceVol" {
+			fileName = "Interface.vol";
+		};
+		instant SimVolume "World" {
+			fileName = "desertWorld.vol";
+		};
+		instant SimVolume "worldTerrain" {
+			fileName = "desertTerrain.vol";
+		};
+		instant SimVolume "desertDML" {
+			fileName = "desertDML.vol";
+		};
+		instant SimVolume "savanaDML" {
+			fileName = "savanaDML.vol";
+		};
+		instant SimVolume "human1DML" {
+			fileName = "human1DML.vol";
+		};
+		instant SimVolume "titanDML" {
+			fileName = "titanDML.vol";
+		};
+		instant SimVolume "tedFile" {
+			fileName = "NoMan'sLand.ted";
+		};
+		instant SimVolume "Missionlighting" {
+			fileName = "NoMan'sLand.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "omen1.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "cru_dsrocks.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "oruinsent.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "dustycave_ent.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "templeruins_ent.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "alibraryext.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "deswall1.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "masters_desert.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "desswe1.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "oasisruins1.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "dustycave.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "templeruins.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "alibrary.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "sunpyramid.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "cru_maps.vol";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "cmagetower_int.vol";
+		};
+	};
+	instant SimGroup "World" {
+		instant SimPalette "palette" {
+			fileName = "desert.day.ppl";
+		};
+		instant MissionCenterPos "MissionCenter" {
+			x = "-1024";
+			y = "-1024";
+			w = "2048";
+			h = "2048";
+		};
+	};
+	instant SimGroup "landscape" {
+		instant Sky "Sky" {
+			dmlName = "deserttansky.dml";
+			skyColor = "0 0 0";
+			hazeColor = "0 0 0";
+			featurePosition = "0";
+			size = "1000";
+			textures[0] = "0";
+			textures[1] = "1";
+			textures[2] = "2";
+			textures[3] = "3";
+			textures[4] = "4";
+			textures[5] = "5";
+			textures[6] = "6";
+			textures[7] = "7";
+			textures[8] = "8";
+			textures[9] = "9";
+			textures[10] = "10";
+			textures[11] = "11";
+			textures[12] = "12";
+			textures[13] = "13";
+			textures[14] = "14";
+			textures[15] = "15";
+			distance = "13000";
+		};
+		instant Planet "Sun" {
+			fileName = "deserttansun.bmp";
+			azimuth = "60";
+			incidence = "50";
+			castShadows = "True";
+			useLensFlare = "True";
+			intensity = "0.299591 0.299591 0.299591";
+			ambient = "0.149591 0.149591 0.149591";
+			size = "2000";
+			distance = "11000";
+		};
+		instant SimTerrain "Terrain" {
+			tedFileName = "NoMan'sLand.dtf";
+			visibleDistance = "1200";
+			hazeDistance = "1150";
+			hazeVerticalMin = "1.0466e-38";
+			hazeVerticalMax = "7.45812e-38";
+			perspectiveDistance = "70";
+			screenSize = "70";
+			contGravity = "0 0 -20";
+			contDrag = "0";
+			contHeight = "10000";
+			position = "-3072 -3072 0";
+			rotation = "0 0 0";
+		};
+		instant Planet "Planet1" {
+			fileName = "deserttansun.bmp";
+			azimuth = "20";
+			incidence = "45";
+			castShadows = "True";
+			useLensFlare = "True";
+			intensity = "0 0 0";
+			ambient = "0 0 0";
+			size = "160";
+			distance = "1000";
+		};
+	};
+	instant SimGroup "Teams" {
+		instant TeamGroup "team0" {
+			instant SimGroup "DropPoints" {
+				instant Marker "Marker1" {
+					dataBlock = "PathMarker";
+					name = "";
+					position = "25.7239 101.5 173.5";
+					rotation = "0 -0 -2.09915";
+				};
+			};
+		};
+		instant TeamGroup "team1" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team2" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team3" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team4" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team5" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team6" {
+			instant SimGroup "AI";
+		};
+		instant TeamGroup "team7" {
+			instant SimGroup "AI";
+		};
+	};
+	instant SimGroup "TheArena" {
+		instant SimGroup "TeleportExitMarkers" {
+			instant Marker "Map Marker1" {
+				dataBlock = "MapMarker";
+				name = "";
+				position = "-4.79998 -65.6998 75.3998";
+				rotation = "0 -0 -1.41998";
+			};
+		};
+	};
+	instant SimGroup "ObserverDropPoints" {
+		instant Marker "camera" {
+			dataBlock = "DropPointMarker";
+			name = "Blood Eagle Base";
+			position = "72.8866 -88.0484 110.81";
+			rotation = "-0.299964 -0 0.183214";
+		};
+	};
+	instant SimGroup "OBJECTS" {
+		instant InteriorShape "omen11" {
+			fileName = "omen1.dis";
+			isContainer = "1";
+			position = "116.691 -86.9294 74.7988";
+			rotation = "0 -0 -1.49988";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "CRUWATER31" {
+			dataBlock = "CRUWATER3";
+			name = "";
+			position = "144.721 -331.514 41.0074";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-3.1575 -346.483 35.3574";
+			rotation = "0.131362 0.710016 0.151221";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "35.0972 -271.509 44.4039";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "252.301 -421.76 33.3219";
+			rotation = "-0.615581 1.4348 1.40108";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "284.625 -341.695 28.6997";
+			rotation = "0 -0 -0.919982";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "59.5556 -394.048 26.6796";
+			rotation = "0 -0 1.21988";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "86.1055 -210.626 75.4493";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "287.699 -310.195 38.0121";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "103.361 -401.383 39.6692";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "186.584 -215.395 58.5857";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "220.976 -202.029 58.0115";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "128.146 -507.595 87.0439";
+			rotation = "0 -1.41987 2.99986";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "106.088 -509.767 77.9334";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "119.5 -482.081 75.726";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "133.949 -421.806 39.8508";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "309.963 -365.542 48.7076";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "329.447 -348.25 57.6576";
+			rotation = "0 -0 0.499986";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "8.66113 -256.043 46.6481";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "5.17789 -239.175 55.1645";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "41.4469 -409.375 53.2705";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "158.348 -427.066 41.484";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "176.664 -433.86 43.3102";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "143.391 -422.654 42.8329";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_B1" {
+			dataBlock = "JBUSH_B";
+			name = "";
+			position = "327.442 -344.182 49.1204";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "33.9223 -242.686 62.1194";
+			rotation = "0 -0 0.0399992";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "0.662952 -273.346 49.8237";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "72.6042 -214.933 65.1855";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "186.828 -202.471 57.2171";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "246.294 -237.985 40.6406";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "220.316 -226.95 50.8069";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "70.4575 -216.342 72.7395";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "151.719 -33.8765 74.9988";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "141.315 -14.1382 75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "50.625 29.6326 70.3988";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "91.2199 33.7251 71.5988";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "1.97775 -29.5557 70.5987";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "5.58108 -97.0828 70.9988";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "78.3736 -135.589 71.5988";
+			rotation = "0 -0 0.319987";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "53.1374 -147.716 69.9988";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "168.125 -137.38 70.8994";
+			rotation = "0 -0 -0.699984";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "oruinsent1" {
+			fileName = "oruinsent.dis";
+			isContainer = "1";
+			position = "45.9957 -217.75 75.1368";
+			rotation = "0 -0 2.60313";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "368.962 -269.5 75.5959";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "405.781 -256.472 68.3533";
+			rotation = "0 -0 -1.4199";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "355.734 -323.4 75.123";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "339.875 -301.534 65.2378";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "390.578 -282.661 75.2868";
+			rotation = "0 -0 -0.159991";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant SimVolume "Volume1" {
+			fileName = "sunpyramidext.vol";
+		};
+		instant InteriorShape "sunpyramidext1" {
+			fileName = "sunpyramidext.dis";
+			isContainer = "1";
+			position = "1073.6 -769.966 144.375";
+			rotation = "0 -0 -1.7399";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "templeruins_ent1" {
+			fileName = "templeruins_ent.dis";
+			isContainer = "1";
+			position = "-913.14 -664.645 103.398";
+			rotation = "0 -0 3.05988";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-951.588 -611.353 65.3457";
+			rotation = "0 -0 0.903203";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-932 -568.264 92.5845";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-950.582 -542.191 84.6975";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "-803.34 -654.733 88.8801";
+			rotation = "-1.05087 0.419819 2.04574";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1m1" {
+			fileName = "ds1m.dis";
+			isContainer = "1";
+			position = "-957.031 -733.334 124.285";
+			rotation = "0.759528 -2.76821 -0.0292666";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-656.486 -191.645 58.3555";
+			rotation = "0.209434 3.08918 0.0523593";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "dustycave_ent1" {
+			fileName = "dustycave_ent.dis";
+			isContainer = "1";
+			position = "-657.14 -197.771 76.6754";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-632.948 -188.677 79.5999";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-663.517 -153.199 63.1517";
+			rotation = "0 -0 1.03991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "-690.598 -201.36 62.1205";
+			rotation = "0.724035 1.31911 0.228639";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-635.401 -212.982 69.4237";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "alibraryext1" {
+			fileName = "alibraryext.dis";
+			isContainer = "1";
+			position = "620.487 -332.402 131.816";
+			rotation = "0 0 -1.0995";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "45.2378 -237.548 64.4518";
+			rotation = "0.87253 -0.257804 0.000739423";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "-79.0931 505.453 9.00961";
+			rotation = "0 -0 -2.61989";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "-1203.5 -63.8923 -27.287";
+			rotation = "0 -0 -1.91989";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "dmagetower1" {
+			fileName = "dmagetower.dis";
+			isContainer = "1";
+			position = "171.296 -743.671 112.98";
+			rotation = "0 -0 -1.81991";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "dwbarrack1" {
+			fileName = "dwbarrack.dis";
+			isContainer = "1";
+			position = "-292.129 -651.393 20.3042";
+			rotation = "0 0 3.03687";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "drogueruin1" {
+			fileName = "drogueruin.dis";
+			isContainer = "1";
+			position = "703.055 144.309 103.92";
+			rotation = "0 0 -2.02458";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-260.109 -733.102 8.08342";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "-349.489 -726.691 16.2536";
+			rotation = "0 -0 -1.73991";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-357.75 -665.859 22.74";
+			rotation = "0 -1.11992 -0.599989";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "-422.55 -270.526 123.7";
+			rotation = "-1.00649 -1.81404 -0.206751";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-461.599 -137.109 119.673";
+			rotation = "0 -1.41992 -0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-394.015 -152.142 128.51";
+			rotation = "0 -1.13992 0.539989";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-366.829 -161.773 127.024";
+			rotation = "0 0.579989 -1.37992";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-357.737 -262.108 138.677";
+			rotation = "0 -1.75991 1.21992";
+			lightParams = "0 ";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-334.427 -653.848 13.6887";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-260.888 -666.393 16.042";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-315.039 -613.486 4.22052";
+			rotation = "0 -0 -0.559989";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "141.453 -747.05 112.601";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "206.593 -751.933 109.263";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "231.684 -742.848 101.64";
+			rotation = "0 -0 -0.859987";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "123.658 -723.701 109.596";
+			rotation = "0 -0 -0.559989";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "86.2782 -810.375 118.612";
+			rotation = "0 -0 -1.43992";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "61.1399 -740.053 113.182";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "264.265 -834.515 86.3242";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "246.417 -770.366 111.812";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "629.982 -240.142 128.014";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "653.25 -470.131 85.7435";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "-1172.13 -1297 15.954";
+			rotation = "0 -0 -0.239991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "417.731 -1595.02 49.3462";
+			rotation = "0 -0 -2.89991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "1760.53 -1076.5 -26.609";
+			rotation = "0 -0 -2.5399";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "1453.29 -262.381 -42.6113";
+			rotation = "0 0 2.32128";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "deswall11" {
+			fileName = "deswall1.dis";
+			isContainer = "1";
+			position = "823.377 792.382 29.5583";
+			rotation = "0 -0 -0.379988";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-301.32 -859.105 83.4724";
+			rotation = "0.335168 0.961669 2.8671";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "670.465 -893.181 85.3787";
+			rotation = "-0.586014 2.11816 0.361";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1l1" {
+			fileName = "ds1l.dis";
+			isContainer = "1";
+			position = "598.409 -841.774 61.5863";
+			rotation = "0.398692 -1.23246 -0.135725";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "651.935 -810.609 56.0684";
+			rotation = "0.363873 -0.820569 -0.320277";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1l1" {
+			fileName = "ds1l.dis";
+			isContainer = "1";
+			position = "867.798 -403.522 97.3196";
+			rotation = "0 -0 -0.63999";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "835.932 -437.703 83.671";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "858.713 -455.491 83.164";
+			rotation = "0 -0 -1.41992";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "767.39 56.8727 49.0459";
+			rotation = "0 -0 -0.899988";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "735.34 16.3203 59.8848";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "631.825 158.106 65.5";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "643.484 118.318 76.8335";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "554.61 -205.17 133.927";
+			rotation = "-0.996712 1.25236 -0.269975";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "505.824 -412.534 98.7953";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "467.574 -428.128 100.831";
+			rotation = "0 -0 -0.819988";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "440.877 -412.233 98.2845";
+			rotation = "0 -2.33991 -1.13993";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2l1" {
+			fileName = "ds2l.dis";
+			isContainer = "1";
+			position = "353.63 -660.07 59.4333";
+			rotation = "0 -2.09992 2.49991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1m1" {
+			fileName = "ds1m.dis";
+			isContainer = "1";
+			position = "365.767 -597.361 57.8125";
+			rotation = "0 -0 0.379991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "291.592 -601.384 67.6955";
+			rotation = "0 -1.09993 -0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "291.775 -531.158 70.4931";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "822 -590.182 19.3822";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "806.054 -629.042 19.3839";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "924.354 -902.449 62.993";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1m1" {
+			fileName = "ds1m.dis";
+			isContainer = "1";
+			position = "876.909 -829.297 90.0223";
+			rotation = "-0.739139 0.340082 -2.12708";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "711.636 -690.38 13.4481";
+			rotation = "-0.760531 0.729037 -0.65726";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "423.299 -734.227 59.4194";
+			rotation = "0 -1.17993 -0.959987";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1m1" {
+			fileName = "ds1m.dis";
+			isContainer = "1";
+			position = "404.982 -714.185 53.4879";
+			rotation = "0.673774 -0.893739 -0.152316";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-762.172 -591.167 86.986";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-799.309 -575.788 96.3362";
+			rotation = "0 -0 -1.03993";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-855.539 -509.898 85.273";
+			rotation = "0 -0 0.259991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-193.117 -207.957 103.261";
+			rotation = "0 -1.95992 2.45992";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3s1" {
+			fileName = "ds3s.dis";
+			isContainer = "1";
+			position = "-188.969 -99.6424 82.1796";
+			rotation = "0 -0 -1.83992";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "-37.3736 -616.96 70.3101";
+			rotation = "0.436067 -0.644035 -0.512416";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2s1" {
+			fileName = "ds2s.dis";
+			isContainer = "1";
+			position = "-105.336 -679.399 89.4001";
+			rotation = "0 -1.47993 -1.11993";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "-120.643 -662.375 79.4914";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1s1" {
+			fileName = "ds1s.dis";
+			isContainer = "1";
+			position = "-205.946 -319.21 109.233";
+			rotation = "0 -0 -0.439991";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-268.845 -302.328 110.75";
+			rotation = "0 -0 -1.47993";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds2m1" {
+			fileName = "ds2m.dis";
+			isContainer = "1";
+			position = "-272.125 -841.91 66.7918";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3m1" {
+			fileName = "ds3m.dis";
+			isContainer = "1";
+			position = "-577.02 -1005.64 101.282";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds3l1" {
+			fileName = "ds3l.dis";
+			isContainer = "1";
+			position = "-633.307 -959.855 83.9496";
+			rotation = "0 -0 2.44315";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "ds1m1" {
+			fileName = "ds1m.dis";
+			isContainer = "1";
+			position = "413.195 -51.1838 121.922";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+		};
+		instant InteriorShape "desswe11" {
+			fileName = "desswe1.dis";
+			isContainer = "1";
+			position = "100 -200 -1200";
+			rotation = "0 0 0";
+			lightParams = "1 4.000000 1 ";
+			Locked = "1";
+		};
+		instant InteriorShape "oasisruins11" {
+			fileName = "oasisruins1.dis";
+			isContainer = "1";
+			position = "300 -200 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "dustycave1" {
+			fileName = "dustycave.dis";
+			isContainer = "1";
+			position = "-1000 -800 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "templeruins1" {
+			fileName = "templeruins.dis";
+			isContainer = "1";
+			position = "-1200 -800 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "alibrary1" {
+			fileName = "alibrary.dis";
+			isContainer = "1";
+			position = "1200 -1200 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "sunpyramid1" {
+			fileName = "sunpyramid.dis";
+			isContainer = "1";
+			position = "1200 -1500 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "87.0461 -195.388 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "95.0509 -195.455 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "105.062 -195.401 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "113.042 -195.4 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "113.007 -212.604 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "105.005 -212.61 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "95.0169 -212.631 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "87.0129 -212.606 -1193.82";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "101.628 -139.275 -1213";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "98.4106 -124.987 -1213";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "92.3959 -107.957 -1212";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_small1" {
+			dataBlock = "fire_small";
+			name = "";
+			position = "100.029 -100.369 -1212";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "CAVE_WATER1" {
+			dataBlock = "CAVE_WATER";
+			name = "";
+			position = "156.212 -122.913 -1223.34";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "TEMPLE_WATER1" {
+			dataBlock = "TEMPLE_WATER";
+			name = "";
+			position = "100.642 -109.112 -1216.06";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			Locked = "1";
+		};
+		instant StaticShape "TEMPLE_WATER1" {
+			dataBlock = "TEMPLE_WATER";
+			name = "";
+			position = "-1264.32 -713.447 -1200.67";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "TEMPLE_WATER1" {
+			dataBlock = "TEMPLE_WATER";
+			name = "";
+			position = "369.012 -223.693 -1215.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "394.63 -147.85 -1196.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "379.755 -200.41 -1196";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "305.643 -231.897 -1195";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "176.483 -79.6784 81.1738";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "176.901 -85.6383 81.1738";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "181.725 -70.258 81.1738";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "183.397 -94.1326 81.1738";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "171.514 -95.0301 81.1738";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "TEMPLE_WATER1" {
+			dataBlock = "TEMPLE_WATER";
+			name = "";
+			position = "101 -199.649 -1198.75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant SimLight "PointLight1" {
+			type = "2";
+			range = "10";
+			color = "0 0.5 1";
+			ambient = "0 0 0";
+			position = "81.0706 -115.251 75";
+			aim = "0.577349 0.577349 0.577349";
+			isStatic = "False";
+		};
+		instant StaticShape "MAPPORTAL1" {
+			dataBlock = "MAPPORTAL";
+			name = "";
+			position = "187.305 -82.1456 76.7988";
+			rotation = "0 -0 -1.45998";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cmagetower_int1" {
+			fileName = "cmagetower_int.dis";
+			isContainer = "1";
+			position = "200 -800 -1200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "CRYSTALBALL1" {
+			dataBlock = "CRYSTALBALL";
+			name = "";
+			position = "200.013 -800.024 -1126.09";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "ROGUECAMP1" {
+			dataBlock = "ROGUECAMP";
+			name = "";
+			position = "691.44 155.265 87.9219";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			Locked = "1";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "691.293 151.883 87.3209";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+	};
+	instant SimGroup "TELEPORTS" {
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SEWER ENT";
+			position = "33.2654 -92.8608 75.5487";
+			rotation = "0 -0 0.119993";
+			boundingBox = "-3.5 -3.5 -1.5 3.5 3.5 1.5";
+			isSphere = "True";
+			TrigType = "WARP";
+			OutPos = "100.2 -234.128 -1197";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "SEWERS";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SEWER EXT";
+			position = "100.079 -243.925 -1195.75";
+			rotation = "0 0 0";
+			boundingBox = "-2 -2 -2 2 2 2";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "39.3957 -89.8364 75";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "DESTOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "OASIS ENT";
+			position = "46.4647 -216.923 78.6366";
+			rotation = "0 -0 -0.559989";
+			boundingBox = "-1.5 -1.5 -1.5 1.5 1.5 1.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "299.828 -270.206 -1201";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "OASIS";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "OASIS EXT";
+			position = "300.095 -279.974 -1197.26";
+			rotation = "0 0 0";
+			boundingBox = "-3 -3 -3.5 3 3 3.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "48.7047 -212.693 79.1371";
+			OutRot = "0 -0 -0.579995";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "DUSTY ENT";
+			position = "-658.365 -189.729 73.4285";
+			rotation = "0 -0 0.0799987";
+			boundingBox = "-10 -10 -10 10 10 10";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "-1002.51 -813.727 -1200";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "DUSTYCAVE";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "DUSTY EXT";
+			position = "-1003.64 -825.402 -1196.29";
+			rotation = "0 0 0";
+			boundingBox = "-5 -5 -5 5 5 5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "-654.679 -216.847 65.5";
+			OutRot = "0 -0 -3.03996";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "TEMPLE ENT";
+			position = "-906 -670.776 112.394";
+			rotation = "0 -0 -0.0999985";
+			boundingBox = "-5 -8 -1 5 8 1";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "-1199.61 -806.913 -1200";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "TEMPLE";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "TEMPLE EXT";
+			position = "-1199.84 -815.865 -1196.12";
+			rotation = "0 0 0";
+			boundingBox = "-5 -1 -5 5 1 5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "-904.42 -660.243 113.401";
+			OutRot = "0 -0 -0.0799994";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "LIBRARY ENT";
+			position = "646.437 -319.349 133.811";
+			rotation = "0 -0 0.459987";
+			boundingBox = "-1 -3 -5 1 3 5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1195.96 -1201.21 -1200";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "LIBRARY";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "LIBRARY EXT";
+			position = "1195.92 -1207.77 -1196.63";
+			rotation = "0 -0 0.0199993";
+			boundingBox = "-2.5 -1 -5 2.5 1 5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "641.192 -321.901 133.82";
+			OutRot = "0 -0 1.97996";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN ENT";
+			position = "1017.11 -760.375 144.375";
+			rotation = "0 -0 -0.15999";
+			boundingBox = "-2.5 -2.5 -5 2.5 2.5 5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1200.02 -1538.16 -1261";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "SUNPYRAMID";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN EXT";
+			position = "1200.02 -1551.8 -1257.86";
+			rotation = "0 0 0";
+			boundingBox = "-2.5 -2.5 -2.5 2.5 2.5 2.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1011.2 -759.495 144.375";
+			OutRot = "0 -0 1.41998";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN 2 ENT";
+			position = "1199.75 -1447.83 -1254.63";
+			rotation = "0 0 0";
+			boundingBox = "-2.5 -2.5 -2.5 2.5 2.5 2.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1199.9 -1481.19 -1180";
+			OutRot = "0 -0 3.10319";
+			Locked = "1";
+			zone = "SUNPYRAMID";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN 2 EXT";
+			position = "1199.69 -1474.65 -1177.85";
+			rotation = "0 0 0";
+			boundingBox = "-2.5 -2.5 -2.5 2.5 2.5 2.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1200.02 -1462.8 -1261";
+			OutRot = "0 -0 3.06319";
+			Locked = "1";
+			zone = "SUNPYRAMID";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN 3 ENT";
+			position = "1199.89 -1525.37 -1174.94";
+			rotation = "0 0 0";
+			boundingBox = "-2.5 -2.5 -2.5 2.5 2.5 2.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1194 -1510.45 -1118";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "SUNPYRAMID";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "SUN 3 EXT";
+			position = "1194.09 -1515.92 -1115.94";
+			rotation = "0 0 0";
+			boundingBox = "-2 -2 -2 2 2 2";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "1200.05 -1516.06 -1180";
+			OutRot = "0 0 0";
+			Locked = "1";
+			zone = "SEWER";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "LADDER";
+			position = "159.569 -136.782 -1223.16";
+			rotation = "0 0 0";
+			boundingBox = "-1 -1 -1 1 1 1";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "160.5 -137 -1216";
+			OutRot = "0 -0 -2.13997";
+			Locked = "1";
+		};
+		instant StaticShape "CRU_PORTAL31" {
+			dataBlock = "CRU_PORTAL3";
+			name = "";
+			position = "81.3133 -115.376 75.5997";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "PORTAL";
+			position = "81.2577 -115.104 75";
+			rotation = "0 -0 0.0199994";
+			boundingBox = "-2.5 -0.5 -5 2.5 0.5 5";
+			isSphere = "False";
+			TrigType = "PORTAL";
+			Locked = "1";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "TOWER ENT";
+			position = "179.741 -726.507 119.179";
+			rotation = "0 -0 -0.259994";
+			boundingBox = "-2 -2 -2.5 2 2 2.5";
+			isSphere = "False";
+			Locked = "1";
+			TrigType = "WARP";
+			OutPos = "190.912 -800.043 -1199";
+			OutRot = "0 -0 -1.61998";
+			Locked = "1";
+			zone = "TOWER";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "TOWER EXT";
+			position = "188.446 -799.98 -1197.57";
+			rotation = "0 0 0";
+			boundingBox = "-0.5 -1.5 -2.5 0.5 1.5 2.5";
+			isSphere = "False";
+			TrigType = "WARP";
+			OutPos = "180.758 -722.563 116.979";
+			OutRot = "0 -0 -0.279997";
+			Locked = "1";
+			zone = "UNKNOWN";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "MAGE";
+			position = "202.864 -795.589 -1128.5";
+			rotation = "0 -0 1.89998";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "ROGUE";
+			position = "693.051 148.912 87.9208";
+			rotation = "0 -0 1.72319";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "WARRIOR";
+			position = "-285.606 -665.044 21.3042";
+			rotation = "0 -0 -0.119998";
+		};
+	};
+	instant SimGroup "Zones" {
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "DESTOWN";
+			position = "114.991 -54.9017 104.788";
+			rotation = "0 -0 0.0799987";
+			boundingBox = "-110 -110 -30 110 110 30";
+			isSphere = "False";
+			Locked = "0";
+			zone = "DESTOWN";
+			TrigType = "ZONE";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "CAMP";
+			position = "682.646 134.691 90.5498";
+			rotation = "0 -0 -0.379992";
+			boundingBox = "-25 -50 -25 25 50 25";
+			isSphere = "False";
+			zone = "CAMP";
+			TrigType = "ZONE";
+		};
+		instant Trigger "GroupTrigger1" {
+			dataBlock = "GroupTrigger";
+			name = "STRONGHOLD";
+			position = "-292.125 -651.388 50.3037";
+			rotation = "0 -0 -0.059999";
+			boundingBox = "-50 -50 -35 50 50 35";
+			isSphere = "False";
+			Locked = "1";
+			zone = "STRONGHOLD";
+			TrigType = "ZONE";
+		};
+	};
+	instant SimGroup "MAPS" {
+		instant InteriorShape "cubes_11" {
+			fileName = "cubes_1.dis";
+			isContainer = "1";
+			position = "0 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "fire_medium1" {
+			dataBlock = "fire_medium";
+			name = "";
+			position = "-79.4777 84.2402 4032.25";
+			rotation = "0 -0 0.259972";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH2_S1" {
+			dataBlock = "FBUSH2_S";
+			name = "";
+			position = "-107.331 71.8386 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH2_S1" {
+			dataBlock = "FBUSH2_S";
+			name = "";
+			position = "-20.6936 105.755 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FTREE2_S1" {
+			dataBlock = "FTREE2_S";
+			name = "";
+			position = "-18.6004 74.0625 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FTREE3_S1" {
+			dataBlock = "FTREE3_S";
+			name = "";
+			position = "-43.1113 88.8869 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH2_S1" {
+			dataBlock = "FBUSH2_S";
+			name = "";
+			position = "-28.2203 54.6369 4032.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH2_S1" {
+			dataBlock = "FBUSH2_S";
+			name = "";
+			position = "-94.3626 28.2029 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FTREE3_S1" {
+			dataBlock = "FTREE3_S";
+			name = "";
+			position = "-80.3613 15.9745 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "-64.372 16.1799 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "-54.1528 91.2604 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FTREE3_S1" {
+			dataBlock = "FTREE3_S";
+			name = "";
+			position = "85.1484 -45.1843 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FTREE3_S1" {
+			dataBlock = "FTREE3_S";
+			name = "";
+			position = "24.9492 -42.89 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "106.768 -94.7884 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "106.75 -67.6652 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "87.7882 -102.685 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "18.5275 -103.213 4032";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cube_forest11" {
+			fileName = "cube_forest1.dis";
+			isContainer = "1";
+			position = "350 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "MURKWATER1" {
+			dataBlock = "MURKWATER";
+			name = "";
+			position = "350.155 -13.6316 3998";
+			rotation = "0 -0 -1.57974";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			Locked = "1";
+		};
+		instant StaticShape "MURKWATER1" {
+			dataBlock = "MURKWATER";
+			name = "";
+			position = "285.93 -14.8498 3998";
+			rotation = "0 -0 1.55973";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_forest21" {
+			fileName = "cube_forest2.dis";
+			isContainer = "1";
+			position = "-350 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "-341.026 5.01848 4000";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "FBUSH1_S1" {
+			dataBlock = "FBUSH1_S";
+			name = "";
+			position = "-387.315 7.44561 4000";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cube_desert11" {
+			fileName = "cube_desert1.dis";
+			isContainer = "1";
+			position = "2000 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_desert21" {
+			fileName = "cube_desert2.dis";
+			isContainer = "1";
+			position = "2000 350 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_desert4_21" {
+			fileName = "cube_desert4_2.dis";
+			isContainer = "1";
+			position = "2000 -350 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_jungle11" {
+			fileName = "cube_jungle1.dis";
+			isContainer = "1";
+			position = "-2000 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_jungle21" {
+			fileName = "cube_jungle2.dis";
+			isContainer = "1";
+			position = "-2000 300 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_jungle31" {
+			fileName = "cube_jungle3.dis";
+			isContainer = "1";
+			position = "-2300 0 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_jungle41" {
+			fileName = "cube_jungle4.dis";
+			isContainer = "1";
+			position = "-2300 300 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2045.5 -45.9975 4000";
+			rotation = "0 -0 0.379977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-1947.5 -50.642 4000";
+			rotation = "0 -0 0.519977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2034.25 25.2934 4000";
+			rotation = "0 -0 0.299978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-1968.5 24.9832 4000";
+			rotation = "0 -0 -0.939974";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2305.25 52.3802 3980.5";
+			rotation = "0 -0 -0.19998";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2358.5 54.9949 3983.5";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2389.51 21.8772 3983.5";
+			rotation = "0 -0 0.479977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2388.25 -32.9471 3982.5";
+			rotation = "0 -0 -0.999972";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2353.75 -66.522 3976";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2301.75 -58.656 3980.79";
+			rotation = "0 -0 0.199978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2282.26 31.8646 3981.5";
+			rotation = "0 -0 -2.03978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2284.75 -32.6108 3982";
+			rotation = "0 -0 0.799974";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "CAVE_WATER1" {
+			dataBlock = "CAVE_WATER";
+			name = "";
+			position = "-2315.75 316.89 3998.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2291.75 363.479 4012";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2307.5 362.96 4015.29";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2291 278.875 4015.29";
+			rotation = "0 -0 -1.0198";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2307.25 279.796 4013.54";
+			rotation = "0 -0 0.599977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2265.25 325.284 4016.53";
+			rotation = "0 -0 0.359978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2329.75 324.137 4015.29";
+			rotation = "0 -0 0.259978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_S1" {
+			dataBlock = "JBUSH_S";
+			name = "";
+			position = "-2297 321.638 4018.5";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JTREE_S1" {
+			dataBlock = "JTREE_S";
+			name = "";
+			position = "-1961.25 258.14 3968.25";
+			rotation = "0 -0 -0.299979";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-1965.01 331.25 4007";
+			rotation = "0 -0 0.559977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JTREE_S1" {
+			dataBlock = "JTREE_S";
+			name = "";
+			position = "-2034.75 259.75 3952.5";
+			rotation = "0 -0 -0.599975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2027.77 328.35 4010";
+			rotation = "0 -0 -0.259977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-1994.75 328.641 3982.3";
+			rotation = "0 -0 -0.0399977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "-1974.75 309.704 3970.75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_M1" {
+			dataBlock = "JPALM_M";
+			name = "";
+			position = "-2031.25 309.695 3956.75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-2012.5 256.835 3980.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-2297.75 322.792 3996.75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-2002 -76.7718 4006.25";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-1994.25 -91.3082 4012.5";
+			rotation = "0 -0 1.65979";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JTREE_S1" {
+			dataBlock = "JTREE_S";
+			name = "";
+			position = "-2034.03 -95.3775 3971.25";
+			rotation = "0 -0 -0.0199981";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-2021.5 80.9347 4019.3";
+			rotation = "0 -0 0.0399973";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JBUSH_M1" {
+			dataBlock = "JBUSH_M";
+			name = "";
+			position = "-1953.75 78.9762 4019.03";
+			rotation = "0 -0 -1.0198";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "JPALM_S1" {
+			dataBlock = "JPALM_S";
+			name = "";
+			position = "-1976 75.348 4005.75";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cube_frozen11" {
+			fileName = "cube_frozen1.dis";
+			isContainer = "1";
+			position = "0 -2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "STREE_S1" {
+			dataBlock = "STREE_S";
+			name = "";
+			position = "-85.1158 -1960.75 3936";
+			rotation = "0 -0 0.61998";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cube_frozen41" {
+			fileName = "cube_frozen4.dis";
+			isContainer = "1";
+			position = "100 -2000 3950";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_frozen21" {
+			fileName = "cube_frozen2.dis";
+			isContainer = "1";
+			position = "200 -2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_frozen31" {
+			fileName = "cube_frozen3.dis";
+			isContainer = "1";
+			position = "-300 -2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_lava11" {
+			fileName = "cube_lava1.dis";
+			isContainer = "1";
+			position = "0 2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_lava21" {
+			fileName = "cube_lava2.dis";
+			isContainer = "1";
+			position = "-100 2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_lava31" {
+			fileName = "cube_lava3.dis";
+			isContainer = "1";
+			position = "200 2000 4000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_lava41" {
+			fileName = "cube_lava4.dis";
+			isContainer = "1";
+			position = "0 2000 4200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_lava51" {
+			fileName = "cube_lava5.dis";
+			isContainer = "1";
+			position = "0 2000 3900";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_arcane11" {
+			fileName = "cube_arcane1.dis";
+			isContainer = "1";
+			position = "0 1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "0";
+		};
+		instant InteriorShape "cube_arcane21" {
+			fileName = "cube_arcane2.dis";
+			isContainer = "1";
+			position = "200 1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_arcane31" {
+			fileName = "cube_arcane3.dis";
+			isContainer = "1";
+			position = "-200 1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_arcane41" {
+			fileName = "cube_arcane4.dis";
+			isContainer = "1";
+			position = "0 1200 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_arcane51" {
+			fileName = "cube_arcane5.dis";
+			isContainer = "1";
+			position = "0 800 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_hell11" {
+			fileName = "cube_hell1.dis";
+			isContainer = "1";
+			position = "0 -1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_hell21" {
+			fileName = "cube_hell2.dis";
+			isContainer = "1";
+			position = "200 -1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_hell31" {
+			fileName = "cube_hell3.dis";
+			isContainer = "1";
+			position = "-200 -1000 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant InteriorShape "cube_hell41" {
+			fileName = "cube_hell4.dis";
+			isContainer = "1";
+			position = "0 -1000 6200";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-174.089 -973.376 5996.09";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-174.926 -1023.28 6000.75";
+			rotation = "0 -0 -1.0599";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-223.785 -1025.5 5999.5";
+			rotation = "0 -0 -1.0999";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-224.046 -976.135 5998.09";
+			rotation = "0 -0 -0.559987";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "14.4162 -976.72 6212";
+			rotation = "0 -0 -1.3399";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-12.4939 -974.384 6212";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "14.2565 -1024 6212";
+			rotation = "0 -0 1.32458e-05";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-14.284 -1022.59 6212";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "0.626194 -1065 5982.51";
+			rotation = "0 -0 -0.339988";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-50.1935 -1015 5982.54";
+			rotation = "0 -0 0.15999";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-0.0495561 -967 5984";
+			rotation = "0 -0 1.1799";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "49.2338 -1016.25 5983.37";
+			rotation = "0 -0 -0.399988";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_large1" {
+			dataBlock = "fire_large";
+			name = "";
+			position = "199.908 -1023.75 6006.84";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_large1" {
+			dataBlock = "fire_large";
+			name = "";
+			position = "176.343 -999.614 6007";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_large1" {
+			dataBlock = "fire_large";
+			name = "";
+			position = "200.289 -976.233 6007";
+			rotation = "0 -0 -0.979985";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_large1" {
+			dataBlock = "fire_large";
+			name = "";
+			position = "223.679 -999.807 6007";
+			rotation = "0 -0 1.2199";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "222.761 -977.957 5994.11";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "222 -1022.15 5993.36";
+			rotation = "0 -0 -1.0199";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "180.458 -1020.85 5992.29";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "178.779 -977.011 5993.25";
+			rotation = "0 -0 1.57989";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant InteriorShape "cube_hell51" {
+			fileName = "cube_hell5.dis";
+			isContainer = "1";
+			position = "0 -1200 6000";
+			rotation = "0 0 0";
+			lightParams = "0 ";
+			Locked = "1";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-28.2984 -1170.54 6002.86";
+			rotation = "0 -0 -0.19999";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "27.808 -1171.64 6003.5";
+			rotation = "0 -0 -2.7599";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "27.6739 -1227.25 6001.06";
+			rotation = "0 -0 0.879985";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "fire_omg1" {
+			dataBlock = "fire_omg";
+			name = "";
+			position = "-28.0475 -1229 6001.26";
+			rotation = "0 -0 -0.739987";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "INVISWALL_21" {
+			dataBlock = "INVISWALL_2";
+			name = "";
+			position = "0.793526 981.053 5983.35";
+			rotation = "0 -0 -2.96096e-07";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+	};
+};
+//--- export object end ---//
+$teamScoreLimit = 6;
+exec(objectives);
+$Game::MissionType = "RPG";
+$cdTrack = 10;
+$cdPlayMode = 1;
+$CURRENTCRUMAP="DESERT";

@@ -1,0 +1,10 @@
+$CURRENTCRUMAP = "FOREST";
+$Server::HostName = "CRUCIBLE Keldrin Forest DEV";
+$Server::HostPublicGame = "true";
+$Server::Address = "192.168.0.33:28001";
+$Server::Port = "28001";
+$Server::Password = "DEV667";
+$telnetport = "667";
+$telnetpassword = "AJJIkkeOI388834u0KKK30NHEUHJHgRREXN";
+$commId = 667;
+$commServers = "668 669";

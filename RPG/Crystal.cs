@@ -1,0 +1,4 @@
+function InitCrystals()
+{
+	echo("InitCrystals()");
+}

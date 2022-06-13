@@ -1,0 +1,41 @@
+============================================================
+PRIMAL
+Ragebeast - Change Race to Demon, MaxHealth 1000, Weapon Damage 20-200, Duration 30s, Cooldown 300s
+Spectral Blade - Throw Weapon, Weapon Damage 20-200, 300 Mana Cost
+Grasping Hook - Pull Target, Weapon Damage 20-200, 300 Mana Cost
+
+============================================================
+HOLY
+Arctic Armor - 100-300% Armor, 3000 Armor, Chill On Hit, 30s Duration, 120s Cooldown
+Shield Bash - Must be using a Shield, Chance Stun Target 10-20%, Hit target for Shield Block Amount, Damage 20-200, 200 Mana Cost
+
+============================================================
+EMPOWERMENT
+
+============================================================
+DARK
+Blink Strike - Weapon Damage 20-200, Critchance 30-60%, Teleport to target, Melee Hit, 300 Mana Cost
+Summon Undead - Spawn Minion
+Hellchain - Root Target, Damage 10-100 1s Interval, 5s Duration
+Deaths Mark - Take more Critical Strikes 10-30%, Take More Critical Damage 10-60%, Take Extra Damage 10-1000
+Arrow Barrage - Reduce Damage 60-40%, Weapon Damage 20-200, Fire 3 Arrows, 300 Mana Cost
+
+============================================================
+LIGHT
+Fools Dance - Dodge Ranged 300-3000, Evade Melee 300-3000, Add All Defense 30-300, 20s Duration, 120s Cooldown
+
+============================================================
+RITUAL
+
+============================================================
+SORCERY
+Incinerate - Fire DOT Aura 20-200, Drain Mana 20-200, 5s Interval, Duration 30m
+Being - Change Race to Arcane, Set Damage to Arcane, Set Max Cooldown 90%, Cooldown Reduction 20-40%, Cast Init 300-3000, Magic Damage 30-300, Drain Mana 300-3000, 30s, 300s Cooldown
+
+============================================================
+PROTECTION
+Lightning Shield - 30-300 Energy Reflect, Absorb Shield 50-500, Duration 60s, 300-3000 Mana Cost
+Shelter - 3000-30000 Max Mana, Rooted, Cant be in other Transform, Damage to Mana 100%, 30s duration, 600s Cooldown
+
+============================================================
+ENCHANTMENT

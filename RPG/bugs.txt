@@ -1,0 +1,29 @@
+Server.cs line 184 $Server::Info = "<jc>Download the CRUCIBLE client at <f1>goo.gl/u8RgnT<f0>\n_______________";
+
+
+Huds not clearing on join
+add in auto target option
+over exp not carried on kill
+maps bugging on multiple maps
+add #set #merchant
+add #set show all
+add Skill Reset
+add Passive Reset
+Add in weildable item swapping
+add social wear options
+add colored loot messages to chat hud
+check for bug with (blank)cultist spawning
+forset and pristene
+forced pvp bug with targeting
+shelter after death *
+shield runes not addable
+quiver prices
+add belt crafting
+spells not saving on travel ?
+revitalize/dots not counting healing inc
+shelter on connect blackscreen *
+DOT messages
+implicit -1 bug
+mana cost req incorrect *
+add #set #salvageall
+rogue master, sneek wich

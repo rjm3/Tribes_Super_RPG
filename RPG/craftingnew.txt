@@ -1,0 +1,53 @@
+300 / 10 30 MATS
+MAGIC 	15	0.125	0.875
+RARE	15	0.25	0.75		
+LEG	15	0.5	0.5	7	7
+
+150 / 2 75 MATS
+MAGIC	37	9 P 27M
+RARE	37	18 P 18M
+LEG	37	37 P
+
+75 / 2 37 MATS
+MAGIC	18	4 P 13 M
+RARE	18	9 P 9 M
+LEG	18	18 P
+
+37 / 2 18 MATS
+MAGIC	9	
+RARE	9
+LEG	9
+
+
+
+
+
+Body - Armor Evasion Resistance
+Armor
+Head
+Chest
+Hands
+Legs
+Boots
+
+Shields - Armor Resistance
+Shield
+Spellshield
+
+Weapons
+Slashing
+Piercing
+Bludgeoning
+Bow
+Crossbow
+
+Magic Weapon
+Staff
+Wand
+
+Accessories
+Ring
+Amulet
+Orb
+Talisman
+

@@ -1,0 +1,6 @@
+VERSION 1
+- Added a lot of music
+- Added more icons
+
+VERSION 0
+First Release

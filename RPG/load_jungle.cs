@@ -1,0 +1,10 @@
+$CURRENTCRUMAP = "JUNGLE";
+$Server::HostName = "CRUCIBLE Gul'war Jungle";
+$Server::HostPublicGame = "true";
+$Server::Address = "192.168.0.33:28003";
+$Server::Port = "28003";
+$Server::Password = "";
+$telnetport = "669";
+$telnetpassword = "AJJIkkeOI388834u0KKK30NHEUHJHgRREXN";
+$commId = 669;
+$commServers = "667 668";

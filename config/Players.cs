@@ -1,0 +1,17 @@
+$PCFG::CurrentPlayer = "1";
+$PCFG::Gender = "MALE";
+$PCFG::Gender0 = "MALE";
+$PCFG::Gender1 = "MALE";
+$PCFG::Info = "TEST";
+$PCFG::Info0 = "TEST";
+$PCFG::Info1 = "TEST";
+$PCFG::LastPlayer = "1";
+$PCFG::Name = "RPGTESTER";
+$PCFG::Name0 = "TEST";
+$PCFG::Name1 = "RPGTESTER";
+$PCFG::SkinBase = "base";
+$PCFG::SkinBase0 = "base";
+$PCFG::SkinBase1 = "base";
+$PCFG::Voice = "male1";
+$PCFG::Voice0 = "male1";
+$PCFG::Voice1 = "male1";

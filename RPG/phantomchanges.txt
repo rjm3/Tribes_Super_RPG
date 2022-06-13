@@ -1,0 +1,11 @@
+Added title bar (connectivity.cs, server.cs)
+Added auto-restart (gamevents.cs, server.cs)
+Fixed some delay counters (comchat.cs, remote.cs)
+
+
+Removed (commented) many echos: (passives.cs, remote.cs, autospells.cs, backpack_plans.cs, server.cs, backpack_runes.cs, backpack_mm.cs, backpack_treasure.cs, targetsystem.cs, spawnsystem.cs, loot.cs, newcombat.cs, rpgfunk.cs, backpack_npc.cs, backpack_maps.cs, backpack.cs)
+Applied requested alterations to certian drop rates (playerdamage.cs)
+Added function msg() for the host to talk to players (server.cs)
+Added function pecho for safer echos in certain spots (server.cs)
+Reduced console output of character saving from 4 lines to 1 line (rpgfunk.cs)
+Fixed Syntax error spam in server console (ai.cs function AI::onDroneKilled())

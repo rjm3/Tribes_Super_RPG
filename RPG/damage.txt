@@ -1,0 +1,187 @@
+================================================================================================
+DAMAGE 
+MIN MAX 100 200
+
+MELEE INC SPLIT 500 TOTAL
+200 Weapon
+150 SkillType (Slashing/Piercing/Bludgeoning/Archery) (50 Item/100 Passive)
+100 DamageType (Melee/Projectile/Fire/Cold/Poison/Energy) (50 Item/50 Passive)
+50 Physical
+
+MAGIC INC SPLIT 500 TOTAL
+100 Weapon
+40 Buff 
+60 Item (Head/Orb/Armor) 
+200 SkillType (Staff/Wand) (75 Item/50 Magic/40 Passive/35Buff)
+100 DamageType (Melee/Projectile/Fire/Cold/Poison/Energy) (50 Item/50 Passive)
+
+MELEE 1000 - 150 = 850
+BASE 400 Weapon, 200 Spell, 200 Passive, 50 Class
+INC 300 Weapon, 100 Spell, 100 Passive (100 = 60 Type, 30 Phyiscal, 10 Monster)
+
+RANGED 900 - 150 = 750
+BASE 400 Weapon, 100 Spell, 100 Passive, 100 Quiver, 50 Class
+INC 300 Weapon, 100 Spell, 100 Passive (50 Type 50 Physical)
+
+
+----------------------------------------------------------------------
+MELEE 1000 - 150 = 850
+
+PHYSBASE SPLIT 850
+400 WEAPON
+150 PASSIVE (100/50)
+150 BUFFSPELL
+100 (MIN/MAX) (70/30)
+50 CLASS
+
+PHYSINC SPLIT 500
+100 WEAPON
+50 SPELLBUFF
+50 PHYSICAL (PASSIVE)
+150 SKILLTYPE (SLASH/PIERCE/BLUDGE) (100 PASSIVE/50 ITEM)
+100 DAMAGETYPE (MELEE/PROJ/FIRE/COLD/POISON/ENERGY) (50 ITEM/50 PASS)
+50 CLASS
+
+----------------------------------------------------------------------
+RANGED 900 - 150 = 750
+
+RANGEDBASE SPLIT 750
+300 WEAPON
+100 PASSIVE (50/50)
+100 BUFFSPELL
+100 (MIN/MAX) (70/30)
+100 QUIVER
+50 CLASS
+
+PHYSINC SPLIT 500
+100 WEAPON
+50 SPELLBUFF
+50 PHYSICAL (PASSIVE)
+150 SKILLTYPE (SLASH/PIERCE/BLUDGE) (100 PASSIVE/50 ITEM) (ARCHERY 75 PASSIVE/75 ITEM)
+100 DAMAGETYPE (MELEE/PROJ/FIRE/COLD/POISON/ENERGY) (50 ITEM/50 PASS)
+50 CLASS
+
+----------------------------------------------------------------------
+MAGIC 1200 - 150 = 1050
+
+SPELLBASE SPLIT 1050
+272 WEAPON
+272 DAMAGESPELL 
+100 PASSIVE
+40 CLASS
+140 BUFFSPELL
+225 ITEM (75 HEAD/ORB/ARMOR)
+
+MAGICINC SPLIT 500
+100 WEAPON
+50 SPELLBUFF
+60 ITEM (20 HEAD/ORB/ARMOR)
+100 STAFF&WAND (50 PASSIVE/25 SPELLBUFF/25 ITEM())
+50 CLASS
+40 MAGIC (40 PASSIVE)
+100 DAMAGETYPE (50 PASS/50 ITEM)
+----------------------------------------------------------------------
+
+SHAMAN DAMAGE SPLIT 1100 - 150 = 950
+33.33 WEAPON 	316
+33.33 SPELL	316
+33.33 TOTEM	316 / 2 = 158
+
+================================================================================================
+STRENGTH: 20, 1 PHYSBASE, 150
+STAMINA: 2, 1 ARMOR
+AGILITY: 20, 1% CRITCHANCE 1% CRITDAMAGE 1% SPELLCRIT 1% SPELLCRITDAMAGE
+SENSE 2, 1 EVASION
+INTELLIGENCE 20, 1 SPELLBASE, 150
+PSYCHIC 2, 1 ALLRESIST
+
+================================================================================================
+
+10,000 TOTAL
+
+7000 ARMOR
+3000 AC
+
+10000 EVASION
+
+7000 ALLRESIST
+3000 RESIST
+ 
+
+ARMOR 30,000 / 3 = 10,000
+
+IMPLICIT 5000
+
+ITEMS 5000/10000
+		
+		5000	10000	2000	1000	4000
+ARMOR------------------------------------		
+ARMOR	0.2	1000	2000	400	200	800
+SHIELD	0.2	1000	2000	400	200	800
+HEAD	0.1	500	1000	200	100	400
+CHEST	0.2	1000	2000	400	200	800
+HANDS	0.1	500	1000	200	100	400
+LEGS	0.1	500	1000	200	100	400
+BOOTS	0.1	500	1000	200	100	400
+
+			
+		5000	10000	2000	1000	4000
+EVASION----------------------------------
+ARMOR	0.3	1500	3000	600	300	
+SHIELD	0.0	0	0	0	0
+HEAD	0.1	500	1000	200	100
+CHEST	0.1	500	1000	200	100
+HANDS	0.1	500	1000	200	100
+LEGS	0.2	1000	2000	400	200
+BOOTS	0.2	1000	2000	400	200
+
+
+		5000	10000	2000	1000	4000
+RESIST------------------------------------	
+ARMOR	0.2	1000	2000	400	200
+SHIELD	0.2	1000	2000	400	200
+HEAD	0.2	1000	2000	400	200
+CHEST	0.1	500	1000	200	100
+HANDS	0.1	500	1000	200	100
+LEGS	0.1	500	1000	200	100
+BOOTS	0.1	500	1000	200	100
+
+================================================================================================
+
+SHIELDS
+50% 2500
+
+================================================================================================
+
+LA TheGreatOnes
+
+================================================================================================
+
+	ORC	HUMAN	ELF	DELF	BORC		
+STR	5	2	1	1	2	5	2
+DEX	2	2	2	5	5	1	1
+INT	1	2	5	2	1	2	5
+
+	17	15	17	17	17
+
+
+================================================================================================
+
+MANA
+
+REGEN
+MANADELTA 1000/sec
+HARVESTER 150/sec
+TOTAL 1500/sec
+
+DEGEN 3000/sec 0.8 2400
+50 SPELLS 1200  
+50 AURAS  1200/3 400
+
+400 (3)	1200
+400 (2) 800
+
+
+
+
+

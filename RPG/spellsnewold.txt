@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------------------------
+PRIMAL
+LIFESTEAL 10 (Lifesteal)
+ADDALLOFF 50 (AAO)
+ARMORPEN 1500 (Armorpen)
+ADDDAMAGE 50 (AddDamage)
+PHYSICALDAMAGE 100 (PhysDamage)
+SLASHING 575 CLEAVE 575 (Slashing)
+PIERCING 575 SNEAKATTACK 575 (Piercing)
+BLUDGEONING 575 BASHING 575 (Bludgeoning)
+ARCHERY 575 AIMING 575 (Archery)
+WEAPONHANDLING 575 (WeaponHandling)
+
+-------------------------------------------------------------------------------------------------
+HOLY
+ADDALLDEF 50 (AAD)
+ARMOR 1000 (Armor)
+MELEEAC 1000 PROJAC 1000 POISONAC 1000 FIREAC 1000 COLDAC 1000 ENERGYAC 1000 (HeavyArmor)
+HEALDELTA 150 (HealDelta)
+REFLECT 10 (Reflect)
+HEALING 575 HEALING% 30 (Healing)
+
+-------------------------------------------------------------------------------------------------
+EMPOWERMENT
+MAXHEALTH 1000 ENDRUANCE 575 (MaxHealth)
+ADDEXP 30 (AddExp)
+MAXWEIGHT 1000 WEIGHTCAPACITY 575 (Weight)
+MINING 575 (Mining)
+STRENGTH 575 STAMINA 575 (StrSta)
+SMITHING 575 (Smithing)
+PRIMALMAGIC 575 (PrimalMagic)
+HOLYMAGIC 575 (HolyMagic)
+EMPOWERMENT 575 (Empowerment)
+
+-------------------------------------------------------------------------------------------------
+DARK
+CRITDAMAGE 75, CRITCHANCE 75 (Critical)
+ADDALLOFF 50 (AAO)
+ADDDAMAGE 50 (AddDamage)
+MAGICDAMAGE 50 (MagicDamage)
+PHYSICALDAMAGE 100 (PhysDamage)
+PIERCING 575 SNEAKATTACK 575 (Piercing)
+ARCHERY 575 AIMING 575 (Archery)
+DODGERANGED 575 EVADEMELEE 575 (Evades)
+HIDING 575 (Hiding)
+MARTIALARTS 575 (MartialArts)
+CASTINIT 575 (CastInit)
+
+-------------------------------------------------------------------------------------------------
+LIGHT
+ADDALLDEF 50 (AAD)
+ARMOR 500 (Armor)
+MELEEAC 500 PROJAC 500 POISONAC 500 FIREAC 500 COLDAC 500 ENERGYAC 500 (LightArmor)
+ALLRESIST 500 (MediumResist)
+MELEERES 500 PROJRES 500 POISONRES 500 FIRERES 500 COLDRES 500 ENERGYRES 500 (LightResist)
+HEALDELTA 75 (HealDelta)
+REFLECT 10 (Reflect)
+
+-------------------------------------------------------------------------------------------------
+RITUAL
+MAXHEALTH 500 (MaxHealth)
+MAXMANA 500 (MaxMana)
+GOLDFIND 30 STEALING 575 HAGGLING 575 (GoldFind)
+MINING 575 (Mining)
+SENSE 575 AGLIGY 575 (SenAgi)
+ALCHEMY 575 (Alchemy)
+
+-------------------------------------------------------------------------------------------------
+SORCERY
+ADDALLOFF 50 (AAO)
+MAGICPEN 1500 (Magicpen)
+ADDDAMAGE 50 (AddDamage)
+MAGICDAMAGE 100 (MagicDamage)
+CASTINIT 575 (CastInit)
+
+-------------------------------------------------------------------------------------------------
+PROTECTION
+ADDALLDEF 50 (AAD)
+ALLRESIST 1000 (AllResist)
+MELEERES 1000 PROJRES 1000 POISONRES 1000 FIRERES 1000 COLDRES 1000 ENERGYRES 1000 (HeavyResist)
+REFLECT 10 (Reflect)
+SPELLRESISTANCE 575 (SpellResistance)
+
+-------------------------------------------------------------------------------------------------
+ENCHANTMENT
+MAXMANA 1000 ENERGY 575 (MaxMana)
+MAGICFIND 30 (MagicFind)
+MANADELTA 150 (ManaDelta)
+MINING 575 (Mining)
+INTELLIGENCE 575 PSYCHIC 575 (IntPsy)
+MAGICCRAFT 575 (MagicCraft)
+WISDOM 575 (Wisdom)
